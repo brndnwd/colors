@@ -2,7 +2,7 @@
 built to select top n most common colors in an image
 
 ## usage
-drop images to analyzed into directory ./images (currently set up for .jpg files)
+drop images to be analyzed into directory ./images (currently set up for .jpg files)
 requires the file "benchmark_colors.csv" to provide a set of possible colors for output
 run in shell: >python colors.py
 program will read all images in ./images and create csv file results.csv
