@@ -17,12 +17,12 @@ def top_n_colors(image, color_array, color_name_array,n):
         n of those closest colors
     '''
     # Open image with PIL's Image class .open() method
-    # convert to np.array using getdata() method which 
-    # returns r,g,b for each pixel 
+    # convert to np.array using getdata() method which
+    # returns r,g,b for each pixel
     image_array = np.array(list(Image.open(image).getdata()))
     size = image_array.shape[0]
 
-    # loop through colors and build distance array which is a 
+    # loop through colors and build distance array which is a
     # stack of each pixels distance to each color
     for i in range(len(color_array)):
         if i == 0:
